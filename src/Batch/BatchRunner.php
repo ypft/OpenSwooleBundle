@@ -177,6 +177,8 @@ final class BatchRunner
                 }
                 --$this->callablesCount;
             }
+
+            $this->resultsChannel->close();
         };
     }
 
